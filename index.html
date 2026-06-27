@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="avatar-wrap">
+        <img src="img/me.webp" alt="avatar" class="avatar" />
+      </div>
+      <div class="profile-info">
+        <div class="profile-top">
+          <h1 class="username">RIO TANIGUCHI</h1>
+        </div>
+        <!-- <div class="profile-stats">
+          <span><strong id="post-count">9</strong> 投稿</span>
+          <span><strong>1,240</strong> フォロワー</span>
+          <span><strong>180</strong> フォロー中</span>
+        </div> -->
+        <p class="bio">
+          <span class="bio-name">WEB制作/グラフィックデザイン制作</span><br/>
+          これまでの制作作品を掲載しております。
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== GRID ========== -->
+  <main class="grid-section" id="grid-section">
+    <div class="post-grid" id="post-grid">
+      <!-- JS で生成 -->
+    </div>
+  </main>
+
+  <!-- ========== MODAL ========== -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modal-close" aria-label="閉じる">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-inner">
+
+        <!-- 画像スライダー -->
+        <div class="modal-image-wrap">
+          <div class="slider-track" id="slider-track"></div>
+          <button class="slider-arrow slider-prev" id="slider-prev" aria-label="前の画像">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="slider-arrow slider-next" id="slider-next" aria-label="次の画像">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+          <div class="slider-dots" id="slider-dots"></div>
+        </div>
+
+        <div class="modal-content">
+          <div class="modal-body">
+
+            <h2 class="modal-title" id="modal-title"></h2>
+
+            <a
+              id="modal-link"
+              class="modal-link-btn"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer">
+              リンクへ
+            </a>
+
+            <p class="modal-desc" id="modal-desc"></p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== douga ========== -->
+  <div class="movie">
+    <iframe width="315" height="560" src="https://www.youtube.com/embed/GQ1fcxS3iBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="315" height="560" src="https://www.youtube.com/embed/DQs0nE2s2v8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="315" height="560" src="https://www.youtube.com/embed/E0sftOi_Oco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="315" height="560" src="https://www.youtube.com/embed/8QFYd_omq9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="315" height="560" src="https://www.youtube.com/embed/mU9RBBfmMYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="315" height="560" src="https://www.youtube.com/embed/vxxOG0d3N0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="315" height="560" src="https://www.youtube.com/embed/Fn13JtUpovc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="315" height="560" src="https://www.youtube.com/embed/PoSMhG_FMWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="315" height="560" src="https://www.youtube.com/embed/TGWW2Li1Brg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
